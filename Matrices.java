@@ -19,7 +19,7 @@ public class Matrices {
                     podio[1][0] = podio[0][0];
                     podio[0][1] = matriz[i][j];
                     podio[0][0] = i;
-                }/*  else if (podio[1][1] <= matriz[i][j]) {
+                } else if (podio[1][1] <= matriz[i][j]) {
                     podio[2][1] = podio[1][1];
                     podio[2][0] = podio[1][0];
                     podio[1][1] = matriz[i][j];
@@ -27,7 +27,7 @@ public class Matrices {
                 } else if (podio[2][1] <= matriz[i][j]) {
                     podio[1][1] = matriz[i][j];
                     podio[1][0] = i;
-                }*/ else {
+                } else {
                     continue;
                 }
             }
@@ -55,7 +55,7 @@ public class Matrices {
         double[][] resultadoPodio = podio(saltos);
 
         for (int i = 0; i < resultadoPodio.length; i++) {
-            System.out.println("Puesto " + (i + 1) + " para el saltador " + resultadoPodio[i][0] + " con " + resultadoPodio[i][1] + " metros");
+            System.out.println("Puesto " + (i + 1) + " para el saltador " + (resultadoPodio[i][0] + 1) + " con " + resultadoPodio[i][1] + " metros");
         }
 
         System.out.println("---");
